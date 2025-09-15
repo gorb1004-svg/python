@@ -4,7 +4,7 @@ dic = {
     'friends':['Alice','Smith','John']
 }
 
-# dic.key(): 특정한 사전의 키들만 가져와 dict_keys 라는 객체를 반환한다.
+# dic.keys(): 특정한 사전의 키들만 가져와 dict_keys 라는 객체를 반환한다.
 print(dic.keys())
                                                     # 8번줄의 print 한 dic.keys의 값들을 -> dict_keys(['name', 'phone', 'friends'])
 for item in dic.keys():                             # for문을 사용함. 사용하면, 순차적으로 이름/폰/친구가 나래비 됌
