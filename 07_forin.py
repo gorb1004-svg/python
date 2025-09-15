@@ -6,8 +6,8 @@ for cup in range(1, 11):
     print(f'물{cup} 번째 잔 떠왔습니다.')
     for mix in range(1, 3):
         print(f'커피믹스{mix}개 넣었습니다.')
-        for spoon in range(1, 4):
-            print(f'{spoon}번 수픈으로 젖는다.')
+        #for spoon in range(1, 4):
+            #print(f'{spoon}번 수픈으로 젖는다.')
 
     print('커피믹스 완성')
 

@@ -25,9 +25,3 @@ while running: ##while 종료 횟수가 정해지지 않을 때 까지 무한 �
 
 
 
-
-
-
-
-
-#    pass

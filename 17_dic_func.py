@@ -6,11 +6,11 @@ dic = {
 
 # dic.key(): 특정한 사전의 키들만 가져와 dict_keys 라는 객체를 반환한다.
 print(dic.keys())
+                                                    # 8번줄의 print 한 dic.keys의 값들을 -> dict_keys(['name', 'phone', 'friends'])
+for item in dic.keys():                             # for문을 사용함. 사용하면, 순차적으로 이름/폰/친구가 나래비 됌
+    print(item)                                     # 딕.키의 내용이 아이템으로 순차적으로 들어 감.
 
-for item in dic.keys():
-    print(item)
-                                                  # 8번줄의 print 한 dic.keys의 값들을
-                                                  # for문을 사용해서 in dic.keys() 이 for item으로 순서대로 출력 함.
+
 
 #dict_keys -> list로 변환                          # 반대로 딕키즈를 리스트로 변환
 keys = list(dic.keys())
@@ -44,4 +44,36 @@ for key in dic.keys():
 # 2. 키와 값을 동시에 뽑아낸 다음 거기서 키와 값을 각각 추출하는 방식
 for item in dic.items():
     print(f'{item[0]}={item[1]}')
+
+
+members = {
+    'kim':63, 'lee':88, 'park':97, "gang":77, "hwang":100, "ga":65,
+    "na":92, "la":90, "wang":100, "gu":79
+}
+
+# 90이상인 사람의 이름만 출력
+for name in members.keys():
+    if members.get(name) >= 90 :
+        print(name)
+
+        # * members.keys를 적는 이유
+        # 1) members는 {딕셔너리}를 담고 있는 변수의 이름
+        # 2) .keys 메서드(기능)을 불러올 때 사용함. 키/밸류/아이템이 있음
+        # * name를 적는 이유: 변수의 이름은 자유롭게 작성해도 됌
+
+        # 숫자 90 이상인 사람의 이름만 출력하라는 조건임
+        # 이상인 사람 이람들을 출력해야되서 반복문인 For문을 사용함. 조건이 만약 멤버 이상
+        # for 문 : 90이상인 사람이름 조건이 있음.
+        # 멤버스.키를 받아야할 네임
+        # 만약 90점 사람의 이름이라면
+
+
+
+# update : 이미 있는 키면 수정을, 없는 키면 추가를 하는 함수
+dic.update({'name':'홍길동','age':30,'married':'false'})
+print(dic)
+
+# dic.clear() : 사전안의 내용을 모두 지운다.
+dic.clear()
+print(dic)
 
