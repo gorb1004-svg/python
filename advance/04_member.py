@@ -8,10 +8,8 @@ class robot:
     def doit(self):
         print('나는 robot의 함수 입니다.')
 
-robot = robot()
+robot = robot()  #robot 얘가 생성이될때, init이 호출된다.
 robot.doit()
-
-
 
             # 흐름 정리(순서)
             # 1. 클래스 정의(설계도를 만든다)
